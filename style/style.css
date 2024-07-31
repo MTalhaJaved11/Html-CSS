@@ -1,3 +1,7 @@
+*{
+    padding: opx;
+    margin: 0px;
+}
 p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
@@ -19,4 +23,41 @@ h1{
    
     padding-top: 10px;
     border: 2px solid black;
+}
+
+.box1{
+    float: left;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+.box2{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    float: right;
+}
+.box3{
+    background-color: blue;
+    clear: both;   /*clear: left; / clear: right;*/
+    height: 100px;
+    width: 100px;                     
+}
+.animate{
+    text-align: center;
+    background-color: red;
+    height: 80px;
+    width: 100px;
+    animation-name: anima;
+    animation-duration: 3s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+}
+
+@keyframes anima {
+    from{}
+    to{
+        background-color: red;
+        width: 10px;
+    }
 }
